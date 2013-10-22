@@ -1,1 +1,1 @@
-web: sfdc-session
+web: salesforce-api-quickstart
