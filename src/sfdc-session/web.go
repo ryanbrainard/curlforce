@@ -62,7 +62,7 @@ func handleCallback(res http.ResponseWriter, req *http.Request) {
     fmt.Fprintln(res, "export SFDC_ACCESS_TOKEN='" + tokenResMap["access_token"].(string) + "'")
 
     fmt.Fprintln(res, "")
-    fmt.Fprintln(res, "curl -H 'X-PrettyPrint: 1' -H 'Authorization: Bearer $SFDC_ACCESS_TOKEN' $SFDC_INSTANCE_URL/services/data")
+    fmt.Fprintln(res, "curl -H 'X-PrettyPrint: 1' -H \"Authorization: Bearer $SFDC_ACCESS_TOKEN\" $SFDC_INSTANCE_URL/services/data")
 
     fmt.Fprintln(res, "")
     fmt.Fprintln(res, "sudo gem install restforce")
