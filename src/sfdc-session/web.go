@@ -67,7 +67,7 @@ func handleCallback(res http.ResponseWriter, req *http.Request) {
     fmt.Fprintln(res, "")
     fmt.Fprintln(res, "sudo gem install restforce")
     fmt.Fprintln(res, "irb")
-    fmt.Fprintln(res, "gem 'restforce'")
+    fmt.Fprintln(res, "require 'restforce'")
     fmt.Fprintln(res, "client = Restforce.new(:oauth_token => ENV['SFDC_ACCESS_TOKEN'], :instance_url  => ENV['SFDC_INSTANCE_URL'])")
 }
 
