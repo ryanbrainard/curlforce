@@ -78,10 +78,7 @@ func (oauth OAuthClient) tokenParams(code string) url.Values {
 }
 
 func output(instanceUrl string, accessToken string) string {
-    return  "# Setup your environment\n" +
-            "export SFDC_INSTANCE_URL='" + instanceUrl + "'\n" +
+    return  "export SFDC_INSTANCE_URL='" + instanceUrl + "'\n" +
             "export SFDC_ACCESS_TOKEN='" +  accessToken + "'\n" +
-            "\n" +
-            "# Access REST API with Curl\n" +
             "curl -H 'X-PrettyPrint: 1' -H \"Authorization: Bearer $SFDC_ACCESS_TOKEN\" $SFDC_INSTANCE_URL/services/data"
 }

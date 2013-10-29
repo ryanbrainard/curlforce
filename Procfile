@@ -1,1 +1,1 @@
-web: salesforce-api-quickstart
+web: curlforce
