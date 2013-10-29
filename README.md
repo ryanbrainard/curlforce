@@ -1,7 +1,7 @@
 Curlforce
 =========
 
-A quick way of getting started using [`curl`](http://curl.haxx.se/docs/manpage.html) with the [Salesforce REST API](http://www.salesforce.com/us/developer/docs/api_rest/) minus the OAuth headaches.
+A quick way to get started using [`curl`](http://curl.haxx.se/docs/manpage.html) with the [Salesforce REST API](http://www.salesforce.com/us/developer/docs/api_rest/) minus the OAuth headaches.
 
 Usage
 -----
