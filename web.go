@@ -83,11 +83,5 @@ func output(instanceUrl string, accessToken string) string {
             "export SFDC_ACCESS_TOKEN='" +  accessToken + "'\n" +
             "\n" +
             "# Access REST API with Curl\n" +
-            "curl -H 'X-PrettyPrint: 1' -H \"Authorization: Bearer $SFDC_ACCESS_TOKEN\" $SFDC_INSTANCE_URL/services/data\n" +
-            "\n" +
-            "# Access REST API with Restforce\n" +
-            "sudo gem install restforce\n" +
-            "irb\n" +
-            "require 'restforce'\n" +
-            "client = Restforce.new(:oauth_token => ENV['SFDC_ACCESS_TOKEN'], :instance_url  => ENV['SFDC_INSTANCE_URL'])"
+            "curl -H 'X-PrettyPrint: 1' -H \"Authorization: Bearer $SFDC_ACCESS_TOKEN\" $SFDC_INSTANCE_URL/services/data"
 }
